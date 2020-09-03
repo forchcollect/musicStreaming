@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+	/*1. 전체, 기본 스타일*/
+	/*공간 할당*/
+	body{
+		height: 1200px;
+		width: 1200px;
+		margin: 0 auto;
+	}
+	
+	.chartNav {
+		margin-right: 10px;
+		float: left;
+		width: 15%;
+		height: 100%;
+		background-color: black;
+	}
+	
+/* 	.chartSection .songSection {
+		width: 90%;
+	} */
+	
+	/*기본 스타일*/
+	
+	tr {
+		font-size: 0.8em;
+	}
+	
+	ul, li {
+		list-style-type: none;
+	}
+	
+	a{
+		text-decoration: none;
+		color: gray;
+	}
+
+	/* 2. 차트 페이지 */
+	h3 {
+		text-align:center;
+		padding-left: 10px;
+	}
+	
+	#chart_keyword {
+		text-align: right;
+		margin-top: 10px;
+		margin-right: 20px;
+	}
+	
+	input[type=text] {
+		width: 100px;
+	}
+	
+	.chart_head > h3 {
+		text-align: center;
+	}
+	
+	.chart_head_div {
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	
+/* 	.chart_head_span {
+		display: inline-block;
+		text-align: center;	
+		border: 1px solid black;
+		padding: 5px;
+	} */
+	
+	.chartTable{
+		padding: 20px;
+		border: 1px solid #ff1150;
+		margin: 20px;
+	}
+	
+	#chartTable_album_img {
+		width:70px;
+		height: 70px;
+	}
+	
+	#textSize_for_image{
+		font-size: 0.6em;
+	}
+
+	.icon_img1{
+		height: 16px;
+		width: 16px;
+	}
+	
+	.icon_img2{
+		height: 20px;
+		width: 20px;
+	}
+	
+	#chartTable_likeNo{
+		font-size: 0.5em;
+	}
+
+
+	/*3. 차트 메뉴*/
+	.chartUl_title{
+		color: #ff1150;
+	}
+	
+	.chartUl * {
+		color: white;
+	}
+	
+	#chartTable_lastColgroup {
+		text-align: center;
+		color: gray;
+	}
+
+	
+	
+	

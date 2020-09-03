@@ -1,0 +1,114 @@
+{\rtf1\ansi\ansicpg949\deff0\nouicompat\deflang1033\deflangfe1042{\fonttbl{\f0\fnil Consolas;}{\f1\fnil\fcharset129 \'b8\'bc\'c0\'ba \'b0\'ed\'b5\'f1;}}
+{\colortbl ;\red191\green95\blue63;\red63\green127\blue127;\red127\green0\blue127;\red0\green0\blue0;\red42\green0\blue255;\red0\green128\blue128;\red127\green0\blue85;\red42\green0\blue225;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\cf1\f0\fs24\lang18 <%@\cf0  \cf2 page\cf0  \cf3 language\cf4 =\cf5\i "java"\cf0\i0  \cf3 contentType\cf4 =\cf5\i "text/html; charset=UTF-8"\cf0\i0\par
+\tab\cf3 pageEncoding\cf4 =\cf5\i "UTF-8"\cf1\i0 %>\cf0\par
+\cf1 <%@\cf0  \cf2 taglib\cf0  \cf3 prefix\cf4 =\cf5\i "c"\cf0\i0  \cf3 uri\cf4 =\cf5\i "http://java.sun.com/jsp/jstl/core"\cf1\i0 %>\cf0\par
+\cf1 <%@\cf0  \cf2 include\cf0  \cf3 file\cf4 =\cf5\i "../inc/side.jsp"\cf1\i0 %>\cf0\par
+\par
+\cf6 <\cf2 link\cf0  \cf3 rel\cf4 =\cf5\i "stylesheet"\cf0\i0  \cf3 href\cf4 =\cf5\i "../css/bootstrap.min.css"\cf0\i0  \cf6 />\cf0\par
+\cf6 <\cf2 link\cf0  \cf3 rel\cf4 =\cf5\i "stylesheet"\cf0\i0  \cf3 href\cf4 =\cf5\i "../css/voucher.css"\cf0\i0  \cf6 />\cf0\par
+\cf6 <\cf2 meta\cf0  \cf3 charset\cf4 =\cf5\i "UTF-8"\cf6\i0 >\cf0\par
+\cf6 <\cf2 script\cf0  \cf3 type\cf4 =\cf5\i "text/javascript"\cf0\i0  \cf3 src\cf4 =\cf5\i "../js/jquery-3.5.1.min.js"\cf6\i0 ></\cf2 script\cf6 >\cf0\par
+\cf6 <\cf2 script\cf0  \cf3 type\cf4 =\cf5\i "text/javascript"\cf6\i0 >\cf0\par
+\cf4\tab\cf7\b function\cf4\b0  showFirst()\{\cf0\par
+\cf4\tab\tab\cf7\b var\cf4\b0  con  = document.getElementById(\cf5 'second'\cf4 );\cf0\par
+\cf4\tab\tab con.style.display=\cf5 'none'\cf4 ;\cf0\par
+\cf4\tab\tab free.style.visibility=\cf5 'visible'\cf4 ;\cf0\par
+\cf4\tab\};\cf0\par
+\cf4\tab\cf7\b function\cf4\b0  showSecond()\{\cf0\par
+\cf4\tab\tab\cf7\b var\cf4\b0  con  = document.getElementById(\cf5 'second'\cf4 );\cf0\par
+\cf4\tab\tab\cf7\b var\cf4\b0  free  = document.getElementById(\cf5 'free'\cf4 );\cf0\par
+\cf4\tab\tab\cf7\b if\cf4\b0 (con.style.display==\cf5 'none'\cf4 )\{\cf0\par
+\cf4\tab\tab\tab con.style.display=\cf5 'block'\cf4 ;\cf0\par
+\cf4\tab\tab\tab $(\cf5 'second'\cf4 ).\cf0\par
+\cf4\tab\tab\tab free.style.visibility=\cf5 'hidden'\cf4 ;\cf0\par
+\cf4\tab\tab\}\cf0\par
+\cf4\tab\};\cf0\par
+\cf4\tab\cf7\b function\cf4\b0  popup()\{\cf0\par
+\cf4\tab\tab\cf7\b var\cf4\b0  popupWidth = 800;\cf0\par
+\cf4\tab\tab\cf7\b var\cf4\b0  popupHeight = 600;\cf0\par
+\par
+\cf4\tab\tab\cf7\b var\cf4\b0  popupX = (window.screen.width \ul / 2) - (popupWidth /\ulnone  2);\cf0\par
+\par
+\cf4\tab\tab\cf7\b var\cf4\b0  popupY= (window.screen.height \ul / 2) - (popupHeight /\ulnone  2);\cf0\par
+\cf4\tab\tab window.open(\cf5 'voucherWindow.jsp'\cf4 , \cf5 '\f1\'b0\'e1\'c1\'a6\'c3\'a2\f0 '\cf4 , \cf5 'status=no, height='\cf4  + popupHeight  + \cf5 ', width='\cf4  + popupWidth  + \cf5 ', left='\cf4 + popupX + \cf5 ', top='\cf4 + popupY);\cf0\par
+\cf4\tab\};\cf0\par
+\cf6 </\cf2 script\cf6 >\cf0\par
+\par
+\cf6 <\cf2 article\cf0  \cf3 class\cf4 =\cf5\i "voucher"\cf6\i0 >\cf0\par
+\cf4\tab\cf6 <\cf2 div\cf0  \cf3 class\cf4 =\cf5\i "divForm"\cf6\i0 >\cf0\par
+\cf4\tab\tab\cf6\ul <\cf2 body\cf6 >\cf0\ulnone\par
+\cf4\tab\tab\tab\cf6 <\cf2 div\cf0  \cf3 id\cf4 =\cf5\i "content"\cf0\i0  \cf3 class\cf4 =\cf5\i "content"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\cf6 <\cf2 div\cf0  \cf3 role\cf4 =\cf5\i "tablist"\cf0\i0  \cf3 class\cf4 =\cf5\i "membership_menu"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\cf6 <\cf2 a\cf0  \cf3 href\cf4 =\cf5\i "\cf6\i0 <\cf2 c:url\cf0  \cf3 value\cf4 =\cf5\i '/voucher/voucherView.jsp'\cf6\i0 ></\cf2 c:url\cf6 >\cf5\i "\cf0\i0  \cf3 class\cf4 =\cf5\i "item on"\cf0\i0  \cf3 role\cf4 =\cf5\i "tab"\cf6\i0 >\cf4 TB \f1\'b8\'e2\'b9\'f6\'bd\'ca\cf6\f0 </\cf2 a\cf6 ><\cf2 a\cf0\par
+\tab\tab\tab\tab\tab\tab\cf3 href\cf4 =\cf5\i "\cf6\i0 <\cf2 c:url\cf0  \cf3 value\cf4 =\cf5\i '/voucher/myMembership.jsp'\cf6\i0 ></\cf2 c:url\cf6 >\cf5\i "\cf0\i0  \cf3 class\cf4 =\cf5\i "item"\cf0\i0  \cf3 role\cf4 =\cf5\i "tab"\cf6\i0 >\cf4 My \f1\'b8\'e2\'b9\'f6\'bd\'ca\f0  \cf6 </\cf2 a\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\cf6 </\cf2 div\cf6 >\cf0\par
+\par
+\cf4\tab\tab\tab\tab\cf6 <\cf2 div\cf0  \cf3 role\cf4 =\cf5\i "tabpanel"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\cf6 <\cf2 div\cf0  \cf3 class\cf4 =\cf5\i "vibe_membership"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\cf6 <\cf2 section\cf0  \cf3 class\cf4 =\cf5\i "section_item membership_section"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 h3\cf0  \cf3 class\cf4 =\cf5\i "membership_title"\cf6\i0 >\cf4 TB\f1\'b8\'a6\f0  \f1\'b8\'b6\'c0\'bd\'b2\'af\f0  \f1\'b0\'e6\'c7\'e8\'c7\'d8\'ba\'b8\'bc\'bc\'bf\'e4\f0 .\cf6 </\cf2 h3\cf6 >\cf0\par
+\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 div\cf0  \cf3 class\cf4 =\cf5\i "list_wrap"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 ul\cf0  \cf3 class\cf4 =\cf5\i "product_list"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 li\cf0  \cf3 class\cf4 =\cf5\i "list_item"\cf0\i0  \cf3 style\cf4 ="\cf3 display\cf4 : \cf8\i block\cf4\i0 ;"\cf6 ><\cf2 a\cf0  \cf3 href\cf4 =\cf5\i "#"\cf0\i0\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf3 onclick\cf4 =\cf5 "showFirst()"\cf4  \cf3 role\cf4 =\cf5\i "radio"\cf0\i0\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf3 class\cf4 =\cf5\i "product_box selected"\cf6\i0 >\cf4  \cf6 <\cf2 span\cf0  \cf3 class\cf4 =\cf5\i "text_wrap"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 span\cf0  \cf3 class\cf4 =\cf5\i "badge"\cf6\i0 >\cf4 Special Event\cf6 </\cf2 span\cf6 >\cf4  \cf6 <\cf2 span\cf6 ><\cf2 strong\cf0\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf3 class\cf4 =\cf5\i "title"\cf6\i0 >\cf4\f1\'b9\'ab\'c1\'a6\'c7\'d1\f0  \f1\'b5\'e8\'b1\'e2\cf6\f0 </\cf2 strong\cf6 ></\cf2 span\cf6 ><\cf2 br\cf6 >\cf4  \cf6 <\cf2 span\cf6 >\cf4\f1\'c3\'b9\f0  \f1\'b4\'de\f0  0\f1\'bf\'f8\cf0\f0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 span\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 span\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 a\cf6 ></\cf2 li\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 li\cf0  \cf3 class\cf4 =\cf5\i "list_item"\cf0\i0  \cf3 style\cf4 ="\cf3 display\cf4 : \cf8\i block\cf4\i0 ;" \cf3 onclick\cf4 =\cf5 "showSecond()"\cf4  \cf3 value\cf4 =\cf5\i "0"\cf6\i0 ><\cf2 a\cf0  \cf3 href\cf4 =\cf5\i "#"\cf0\i0\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf3 role\cf4 =\cf5\i "radio"\cf0\i0  \cf3 class\cf4 =\cf5\i "product_box"\cf6\i0 >\cf4  \cf6 <\cf2 span\cf0  \cf3 class\cf4 =\cf5\i "text_wrap"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 span\cf6 ><\cf2 strong\cf0  \cf3 class\cf4 =\cf5\i "title"\cf6\i0 >\cf4\f1\'b9\'ab\'c1\'a6\'c7\'d1\f0  \f1\'b5\'e8\'b1\'e2\cf6\f0 </\cf2 strong\cf6 ></\cf2 span\cf6 >\cf4  \cf6 <\cf2 span\cf6 ></\cf2 span\cf6 ><\cf2 br\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 span\cf6 ><\cf2 em\cf0  \cf3 class\cf4 =\cf5\i "charge"\cf6\i0 >\cf4\f1\'bf\'f9\f0  6,000\f1\'bf\'f8\'ba\'ce\'c5\'cd\cf6\f0 </\cf2 em\cf6 ></\cf2 span\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 span\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 a\cf6 ></\cf2 li\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 ul\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 div\cf6 >\cf0\par
+\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 div\cf0  \cf3 id\cf4 =\cf5\i "second"\cf0\i0  \cf3 style\cf4 ="\cf3 display\cf4 : \cf8\i none\cf4\i0 ;"\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 section\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 hr\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 h3\cf6 >\cf4\f1\'b0\'e1\'c1\'a6\f0  \f1\'b9\'e6\'b9\'fd\'c0\'bb\f0  \f1\'bc\'b1\'c5\'c3\'c7\'cf\'bc\'bc\'bf\'e4\cf6\f0 </\cf2 h3\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 div\cf0  \cf3 class\cf4 =\cf5\i "list_wrap"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 ul\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 li\cf0  \cf3 id\cf4 =\cf5\i "l1"\cf0\i0  \cf3 class\cf4 =\cf5\i "list_item2"\cf0\i0  \cf3 value\cf4 =\cf5\i "5000"\cf6\i0 ><\cf2 a\cf0  \cf3 href\cf4 =\cf5\i "#"\cf0\i0   \cf3 class\cf4 =\cf5\i "product_box2"\cf0\i0  \cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 span\cf0  \cf3 class\cf4 =\cf5\i "title2"\cf6\i0 ><\cf2 strong\cf0  \cf3 style\cf4 ="\cf3 font-size\cf4 : \cf8\i 20px\cf4\i0 "\cf6 >\cf4 1\f1\'b3\'e2\f0  \f1\'be\'e0\'c1\'a4\f0  \cf6 <\cf2 span\cf0  \cf3 style\cf4 ="\cf3 color\cf4 : \cf8\i red\cf4\i0 ; \cf3 font-size\cf4 : \cf8\i small\cf4\i0 ;"\cf6 >\cf4\f1\'c3\'df\'c3\'b5\cf6\f0 </\cf2 span\cf6 ></\cf2 strong\cf6 ></\cf2 span\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 br\cf6 ><\cf2 br\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 em\cf0  \cf3 style\cf4 ="\cf3 color\cf4 : \cf8\i red\cf4\i0 "\cf6 >\cf4\f1\'bf\'f9\f0  5,000\f1\'bf\'f8\cf6\f0 </\cf2 em\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 a\cf6 ></\cf2 li\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 li\cf6 ></\cf2 li\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 li\cf0  \cf3 id\cf4 =\cf5\i "l2"\cf0\i0  \cf3 class\cf4 =\cf5\i "list_item2"\cf0\i0  \cf3 value\cf4 =\cf5\i "6000"\cf6\i0 ><\cf2 a\cf0  \cf3 href\cf4 =\cf5\i "#"\cf0\i0   \cf3 class\cf4 =\cf5\i "product_box2"\cf0\i0  \cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 span\cf0  \cf3 class\cf4 =\cf5\i "title2"\cf6\i0 ><\cf2 strong\cf0  \cf3 style\cf4 ="\cf3 font-size\cf4 : \cf8\i 20px\cf4\i0 "\cf6 >\cf4 1\f1\'b4\'de\f0  \f1\'be\'e0\'c1\'a4\f0  \cf6 </\cf2 strong\cf6 ></\cf2 span\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 br\cf6 ><\cf2 br\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 em\cf0  \cf3 style\cf4 ="\cf3 color\cf4 : \cf8\i red\cf4\i0 "\cf6 >\cf4\f1\'bf\'f9\f0  6,000\f1\'bf\'f8\cf6\f0 </\cf2 em\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 a\cf6 ></\cf2 li\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 li\cf6 ></\cf2 li\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 ul\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 div\cf6 >\cf4\tab\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 section\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 </\cf2 div\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 div\cf0   \cf3 style\cf4 ="\cf3 clear\cf4 :\cf8\i both\cf4\i0 ;" \cf3 id\cf4 =\cf5\i "free"\cf0\i0  \cf6 >\cf4\f1\'c3\'b9\f0  \f1\'b4\'de\'c0\'ba\f0  \f1\'b9\'ab\'c1\'a6\'c7\'d1\'c0\'b8\'b7\'ce\f0  \f1\'c0\'cc\'bf\'eb\'c7\'cf\'bc\'bc\'bf\'e4\cf6\f0 </\cf2 div\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\cf6 </\cf2 section\cf6 >\cf0\par
+\par
+\cf4\tab\tab\tab\tab\tab\tab\cf6 <\cf2 section\cf0  \cf3 class\cf4 =\cf5\i "section_item subscribe_section"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 a\cf0  \cf3 href\cf4 =\cf5\i "#"\cf0\i0  \cf3 onclick\cf4 =\cf5 "popup()"\cf4  \cf3 rel\cf4 =\cf5\i "stylesheet"\cf0\i0\par
+\tab\tab\tab\tab\tab\tab\tab\tab\cf3 class\cf4 =\cf5\i "link_subscribe"\cf6\i0 >\cf4\f1\'b1\'b8\'b5\'b6\'c7\'cf\'b1\'e2\cf6\f0 </\cf2 a\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\cf6 </\cf2 section\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\cf6 <\cf2 br\cf6 >\cf4  \cf6 <\cf2 br\cf6 >\cf4  \cf6 <\cf2 br\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\cf6 <\cf2 section\cf0  \cf3 class\cf4 =\cf5\i "section_item notice_section"\cf6\i0 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\tab\cf6 <\cf2 h3\cf0  \cf3 class\cf4 =\cf5\i "notice_title"\cf6\i0 >\cf4\f1\'b8\'e2\'b9\'f6\'bd\'ca\f0  \f1\'b1\'b8\'b8\'c5\f0  \f1\'bd\'c3\f0  \f1\'c2\'fc\'b0\'ed\'c7\'cf\'bc\'bc\'bf\'e4\cf6\f0 </\cf2 h3\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\cf0\par
+\cf4\tab\tab\tab\tab\tab\tab\cf6 </\cf2 section\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\tab\cf6 </\cf2 div\cf6 >\cf0\par
+\cf4\tab\tab\tab\tab\cf6 </\cf2 div\cf6 >\cf0\par
+\cf4\tab\tab\tab\cf6 </\cf2 div\cf6 >\cf0\par
+\cf4\tab\cf6 </\cf2 div\cf6 >\cf0\par
+\cf6 </\cf2 article\cf6 >\cf0\par
+\par
+\f1\fs20\par
+}
+ 

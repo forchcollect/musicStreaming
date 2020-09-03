@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+
+ /*전체 부분, 태그*/
+ 	.song_section{
+		margin-bottom: 30px;
+	}
+	
+	hr{
+		width: 60%;
+	
+	}
+	
+	.song_section div{
+
+		height: 250px;
+		padding: 10px;
+	}
+	
+	section header{
+		font-weight: bold;
+		
+	}
+	
+	
+	.songListTable{
+		padding: 20px;
+		border: 1px solid #ff1150;
+		margin: 20px;
+		width:60%;
+	}
+	
+	/*이미지 부분*/
+	.album_img{
+		float: left;
+	 	width:300px;
+	 	height:220px;
+	 	border:1px solid gray;
+	 	margin-bottom: 20px;
+	 	margin-right: 20px;
+	 	
+	}
+
+	.song_album_img{
+		width:300px;
+	 	height:200px;
+	 	border:1px solid gray;
+	}
+	
+	/*위쪽에 정보 - infomation 페이지 공통 적용*/ 
+	.info_title{
+		font-weight: bold;
+		font-size: 30px;
+		font-family: HY크리스탈M, Serif, Sans-serif, "Mono space";
+/* 괜찮은 글씨체 후보들: HY동녘M MD아트체 */
+	}
+
+	
+	.info_singer {
+		color: #ff1150;
+		font-family: 굴림, Serif, Sans-serif, "Mono space";
+		font-weight: bold;
+		font-size: 1.2em;
+	}
+	
+	.info_table{
+		margin-bottom: 20px;
+	}
+	
+	/*가수의 다른 앨범*/
+	.album_of_sameSinger {
+		float:left;
+		margin-right: 30px;
+		/* height: 400px; */
+		
+	}
+	
